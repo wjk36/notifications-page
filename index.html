@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="./app.js"></script>
+  <title>Notifications page</title>
+
+</head>
+
+<body onload="getNotifs()">
+
+  <div class="notifications center">
+    <div id="header">
+      <container>Notifications <span id="numNotifs">3</span></container>
+      <button class="clickable" onclick="readAll()">Mark all as read</button>
+    </div>
+
+    <div class="notif unread">
+      <img src="assets/images/avatar-mark-webber.webp" alt="" srcset="">
+      <div class="content">
+        <span class="user clickable">Mark Webber</span> reacted to your recent post
+        <span class="post clickable">My first tournament today!</span>
+        <span class="notif-icon">&#x25cf;</span><br>
+        <span class="time">1m ago</span>
+      </div>
+    </div>
+
+    <div class="notif unread">
+      <img src="assets/images/avatar-angela-gray.webp" alt="" srcset="">
+      <div class="content">
+        <span class="user clickable">Angela Gray</span> followed you
+        <span class="notif-icon"> &#x25cf;</span><br>
+        <span class="time">5m ago</span>
+      </div>
+    </div>
+
+    <div class="notif unread">
+      <img src="assets/images/avatar-jacob-thompson.webp" alt="" srcset="">
+      <div class="content">
+        <span class="user clickable">Jacob Thompson</span> has joined your group
+        <span class="group clickable">Chess Club</span>
+        <span class="notif-icon">&#x25cf;</span><br>
+        <span class="time">1 day ago</span>
+      </div>
+    </div>
+
+    <div class="notif read">
+      <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" srcset="">
+      <div class="content">
+        <span class="user clickable">Rizky Hasanuddin</span> sent you a private message
+        <span class="notif-icon">&#x25cf;</span> <br>
+        <span class="time">5 days ago</span>
+        <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of
+          fun
+          and improving my game.</p>
+      </div>
+    </div>
+
+    <div class="notif read">
+      <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+      <div class="content">
+        <span class="user clickable">Kimberly Smith</span> commented on your picture
+        <span class="notif-icon">&#x25cf;</span><br>
+        <span class="time">1 week ago</span>
+      </div>
+      <img class="image" src="assets/images/image-chess.webp" alt="">
+    </div>
+
+    <div class="notif read">
+      <img src="assets/images/avatar-nathan-peterson.webp" alt="">
+      <div class="content">
+        <span class="user clickable">Nathan Peterson</span> reacted to your recent post
+        <span class="post clickable">5 end-game
+          strategies to increase your win rate</span>
+          <span class="notif-icon">&#x25cf;</span><br>
+        <span class="time">2 weeks ago</span>
+      </div>
+    </div>
+
+    <div class="notif read">
+      <img src="assets/images/avatar-anna-kim.webp" alt="" srcset="">
+      <div class="content">
+        <span class="user clickable">Anna Kim</span> left the group
+        <span class="group clickable">Chess Club</span>
+        <span class="notif-icon">&#x25cf;</span><br>
+        <span class="time">2 weeks ago</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+    <a href="#">Will Kraft</a>.
+  </div>
+</body>
+
+</html>
